@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+🍽️ Food Delivery Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern Food Delivery Web App built using React, Firebase, and React Router, allowing users to browse restaurants, add food items to cart, place orders, and track their order history — all with a clean and responsive UI.
 
-## Available Scripts
+🚀 Features
 
-In the project directory, you can run:
+🔐 User Authentication (Firebase Auth)
 
-### `npm start`
+🍴 Browse Restaurants & Menus
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🔍 Search restaurants or menu items
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🛒 Add / Remove items from Cart
 
-### `npm test`
+📦 Place Orders & View Order History
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+💾 Persistent Cart & Orders using Local Storage
 
-### `npm run build`
+🎨 Modern UI with inline CSS (no external UI libraries)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+📱 Responsive design
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🧰 Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Frontend: React.js
 
-### `npm run eject`
+Routing: React Router DOM
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Backend / Database: Firebase Firestore
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Authentication: Firebase Authentication
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+State Management: React Context API
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Storage: Browser Local Storage
 
-## Learn More
+Create a .env file in the root directory and add:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+REACT_APP_FIREBASE_API_KEY=your_api_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
+REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+REACT_APP_FIREBASE_APP_ID=your_app_id
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+🔥 Firebase Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Create a Firebase project
 
-### Analyzing the Bundle Size
+Enable:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Authentication (Email/Password)
 
-### Making a Progressive Web App
+Firestore Database
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+▶️ Running the App Locally
+npm install
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🌍 Deployment
 
-### Deployment
+You can deploy this app on:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+GitHub Pages
 
-### `npm run build` fails to minify
+Vercel
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Netlify
+
+
+📌 Future Enhancements
+
+Online payment integration
+
+Admin dashboard for restaurant owners
+
+Real-time order status updates
+
+Order cancellation & refunds
+
+Ratings & reviews
+
+👩‍💻 Author
+
+Kavina A C
+Full Stack Developer | MERN | Firebase | React
