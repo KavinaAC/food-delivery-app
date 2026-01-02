@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import { auth, db } from "../services/firebase";
+import { auth } from "../services/firebase";
 import { onAuthStateChanged } from "firebase/auth";
 
 const AuthContext = createContext();
@@ -25,3 +25,4 @@ export const AuthProvider = ({ children }) => {
 
 // Custom hook to use auth context
 export const useAuth = () => useContext(AuthContext);
+
