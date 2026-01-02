@@ -1,0 +1,140 @@
+/* Home page styling */
+.home-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
+}
+
+/* Animated background circles */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: float 20s ease-in-out infinite;
+}
+
+.circle1 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #ff9a9e, transparent);
+  top: -100px;
+  left: -100px;
+}
+
+.circle2 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #fad0c4, transparent);
+  bottom: -50px;
+  right: -50px;
+  animation-duration: 25s;
+}
+
+.circle3 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #ffecd2, transparent);
+  top: 200px;
+  right: -200px;
+  animation-duration: 30s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-50px) translateX(50px); }
+}
+
+/* Main content */
+.content {
+  position: relative;
+  text-align: center;
+  padding: 3rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  transition: all 0.5s ease;
+}
+
+.content:hover {
+  transform: scale(1.03);
+}
+
+/* Headings */
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+}
+
+.highlight {
+  color: #ffd700;
+}
+
+/* Subtext */
+.subText {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: #f0f0f0;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+}
+
+/* Buttons */
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+/* Button colors */
+.loginBtn {
+  background: linear-gradient(45deg, #ff512f, #f09819);
+  color: #fff;
+}
+
+.signupBtn {
+  background: linear-gradient(45deg, #11998e, #38ef7d);
+  color: #fff;
+}
+
+/* Footer text */
+.footerText {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+  margin-top: 1rem;
+  animation: fadeIn 2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
